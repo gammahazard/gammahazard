@@ -1,6 +1,7 @@
 CyberCitizens Admin:
 https://cybercitizens.io/
-
+Metafrontier CM: 
+https://metafrontier.xyz
 Ergo platform contributor --> https://ergoplatform.org/en/ <br>
 <br>Recent publication(s): 
 https://ergoplatform.org/en/blog/2022-03-03-blockchain-and-the-case-for-ergo/<br>
