@@ -5,12 +5,12 @@
 ![Status](https://img.shields.io/badge/Status-Building_Vanguard-gold?style=for-the-badge)
 
 ### Full Stack Systems Engineer
-*Building secure, scalable, and reliable architecture for the web.*
+*Building secure, scalable, and reliable architecture for the web and desktop.*
 
 ---
 
 I don't just build frontends; I engineer complete systems.
-My focus is on **Reliability Engineering**—creating applications that look great on the client side (Next.js/React) while remaining bulletproof on the server side. Whether it's high-frequency blockchain forensics or business-critical booking platforms, I build software that **does not fail**.
+My focus is on **Reliability Engineering**—creating applications that look great on the client side (Next.js/React) while remaining bulletproof on the server side. Whether it's high-frequency blockchain forensics, cross-platform desktop apps, or business-critical booking platforms, I build software that **does not fail**.
 
 ### 🔭 Current Focus: Vanguard Secure Solutions
 **Vanguard Secure Solutions** is my architecture firm specialized in digitizing high-trust service businesses.
@@ -29,7 +29,7 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 > **[Metafrontier](https://metafrontier.xyz) (Technical Operations Lead)**
 > *Current Engagement.*
 > * **Role:** Ecosystem Security & Technical Support.
-> * **Focus:** Managing operational security for a high-value user base, triaging technical incidents, and mitigating social engineering threats against the protocol.
+> * **Focus:** Managing operational security for a high-value user base, triaging technical incidents, and mitigating social engineering threats.
 
 > **[CyberVerse](https://cyberversegame.io/) (Co-Founder & Lead Engineer)**
 > *Legacy Project - Active Ecosystem.*
@@ -41,19 +41,19 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 
 ### 🛠️ The Full Stack Arsenal
 
-I operate across the entire stack, from pixel-perfect UI to memory-safe backend logic.
+I operate across the entire stack, from pixel-perfect UI to system-level desktop control.
 
-| **Frontend Experience** | **Backend & Systems** | **Data & Security** |
+| **Frontend & Tooling** | **Backend & Platforms** | **Data & Security** |
 | :--- | :--- | :--- |
-| ![Next JS](https://img.shields.io/badge/Next-black?style=flat-square&logo=next.js&logoColor=white) **Next.js 14** | ![Node](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) **Node.js** | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) **MongoDB** |
-| ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) **React** | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) **Rust** | ![SQL](https://img.shields.io/badge/SQL-SQLite_%2F_Postgres-003B57?style=flat-square&logo=postgresql&logoColor=white) **SQL / SQLite** |
-| ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=flat-square&logo=mui&logoColor=white) **Material UI** | ![WASI](https://img.shields.io/badge/System-WASI_0.2-orange?style=flat-square) **WASI** | ![FIDO](https://img.shields.io/badge/Auth-FIDO2_Passkeys-green?style=flat-square) **Biometrics** |
-| **TypeScript** | **WebAssembly (WASM)** | **Zero-Trust Arch** |
+| ![Next JS](https://img.shields.io/badge/Next.js_14-black?style=flat-square&logo=next.js&logoColor=white) | ![Node](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) | ![SQL](https://img.shields.io/badge/SQL_/_SQLite-003B57?style=flat-square&logo=postgresql&logoColor=white) |
+| ![MUI](https://img.shields.io/badge/Material_UI-%230081CB.svg?style=flat-square&logo=mui&logoColor=white) | ![WASI](https://img.shields.io/badge/WASI_0.2-orange?style=flat-square) | ![FIDO](https://img.shields.io/badge/Biometrics_(FIDO2)-green?style=flat-square) |
+| ![JS](https://img.shields.io/badge/Vanilla_JS_/_ESM-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | ![Desktop](https://img.shields.io/badge/Electron_/_Tauri-critical?style=flat-square) | ![Arch](https://img.shields.io/badge/Zero_Trust_Security-blueviolet?style=flat-square) |
 
 ### 🧠 Engineering Philosophy
-* **Decoupled by Default:** Vanguard utilizes a strict **Decoupled Architecture**. The Frontend (User Experience) and Backend (Business Logic) are separate entities. This ensures security isolation and allows components to scale independently.
-* **Data Agnostic:** I select the right tool for the job—**SQL** (SQLite/Postgres) for relational integrity in financial systems, and **NoSQL** (MongoDB) for flexible schemas in gaming/social data.
-* **The "WASI" Advantage:** I specialize in the **WASI Component Model** to build portable, secure backends that can run anywhere.
+* **Deep Runtime Knowledge:** I understand the JavaScript runtime at a low level (ESM vs CJS, Event Loop, Bundling). I specialize in making legacy modules work within modern, strict frameworks like Next.js.
+* **Zero-Liability Design:** I prioritize **risk reduction**. I leverage hardware security (FIDO2) and architectural air-gaps to ensure that toxic data (Credit Cards/PII) never touches the application database.
+* **Decoupled by Default:** Vanguard utilizes a strict **Decoupled Architecture**. The Frontend and Backend are separate entities, ensuring security isolation and allowing components to scale independently.
 
 ---
 
