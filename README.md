@@ -16,11 +16,12 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 **Vanguard Secure Solutions** is my architecture firm specialized in digitizing high-trust service businesses.
 
 **The Flagship Implementation:**
-> **[Project: The Kennel Platform (Pet Passport)](https://github.com/gammahazard/vanguard-frontend)**
-> A Zero-Liability booking and identity platform built to manage luxury pet facilities.
-> * **Concept:** Digital Identity ("Passport") & Biometric Access Control.
-> * **Stack:** Next.js 14, Rust (Axum), FIDO2, SQLite.
-> * **Innovation:** Client-side logic handles complex capacity planning without server latency.
+> **[Project: The Kennel Platform](https://github.com/gammahazard/Vanguard-kennel-frontend)**
+> A Zero-Liability booking and guest management platform for luxury pet facilities.
+> * **Concept:** Digital Identity ("Pawsports") & Biometric Access Control.
+> * **Stack:** Next.js 14, Rust (Axum), FIDO2/WebAuthn, SQLite.
+> * **Scale:** ~20,000 lines frontend + ~3,500 lines Rust backend.
+> * **Security:** 10/10 integration tests passing, IDOR protection, rate limiting.
 
 ---
 
@@ -63,4 +64,4 @@ I operate across the entire stack, from pixel-perfect UI to system-level desktop
 
 ---
 
-[👉 **View Flagship Architecture: The Kennel Platform**](https://github.com/gammahazard/vanguard-frontend)
+[👉 **View Flagship Architecture: The Kennel Platform**](https://github.com/gammahazard/Vanguard-kennel-frontend)
