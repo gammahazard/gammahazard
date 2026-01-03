@@ -35,7 +35,7 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 > *Legacy Project - Active Ecosystem.*
 > * **Role:** Co-Founder / Core Developer.
 > * **Achievement:** Built the platform from the ground up (0 to 1), scaling it to a live, self-sustaining ecosystem.
-> * **Tech:** MongoDB, TypeScript, Web3 Integration.
+> * **Tech:** MongoDB, Vanilla JS, Web3 Integration.
 
 ---
 
