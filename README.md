@@ -12,7 +12,7 @@
 ## 🖥️ Interactive Terminal Portfolio
 
 > **[Launch Terminal System >>](https://gammahazard.github.io/Vanguard-Portfolio/)**
-> *Built with Rust & WebAssembly. Type `sudo hire me` to execute.*
+> *Built with Rust & WebAssembly. 
 
 ---
 
