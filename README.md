@@ -29,6 +29,7 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 > * **Live Demo:** [protocol-gateway-sandbox.vercel.app](https://protocol-gateway-sandbox.vercel.app)
 > * **Concept:** Malformed Modbus crashes the sandbox, not the gateway. <10ms recovery.
 > * **Stack:** Rust (nom parser), Leptos, WASI 0.2, JavaScript host (JCO).
+> * **Reliability:** 2oo3 TMR voting with real WASM measurements—SIL 3 patterns (IEC 61508).
 > * **Security:** Dual-terminal demo showing Python crash vs WASM resilience.
 > * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
 
@@ -37,6 +38,7 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 > * **Live Demo:** [vanguard-ics-guardian.vercel.app](https://vanguard-ics-guardian.vercel.app)
 > * **Concept:** Sandbox untrusted sensor drivers—allow reads, block exfiltration.
 > * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
+> * **Reliability:** 2oo3 TMR voting demo—WASM hot-swap (~10ms) vs Python restart (3+ sec).
 > * **Security:** 18 integration tests verifying all 4 security states.
 > * **Highlight:** 68KB WASM component vs 500MB+ Docker containers.
 
@@ -90,6 +92,8 @@ I operate across the entire stack, from pixel-perfect UI to system-level desktop
 * **Verifiable Benchmarks:** I don't trust marketing claims. When I say "68KB vs 500MB," I provide the Dockerfiles to prove it. Evidence over assertions.
 
 * **Crash Containment:** Untrusted parsers run in WASM sandboxes. A buffer overflow kills the sandbox—not the host. Sub-10ms recovery, zero data loss.
+
+* **Hitless Failover:** 2oo3 TMR voting ensures continuous operation during faults. WASM's microsecond instantiation enables software failover without frame loss—Python can't match this.
 
 ---
 
