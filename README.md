@@ -24,7 +24,15 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 
 **Featured Implementations:**
 
-> **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)** ⭐ NEW
+> **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** ⭐ NEW
+> Safe legacy protocol translation via WASM sandboxing—Modbus TCP → MQTT with crash containment.
+> * **Live Demo:** [protocol-gateway-sandbox.vercel.app](https://protocol-gateway-sandbox.vercel.app)
+> * **Concept:** Malformed Modbus crashes the sandbox, not the gateway. <10ms recovery.
+> * **Stack:** Rust (nom parser), Leptos, WASI 0.2, JavaScript host (JCO).
+> * **Security:** Dual-terminal demo showing Python crash vs WASM resilience.
+> * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
+
+> **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)**
 > Capability-based security demo: WASI 0.2 data diode for industrial control systems.
 > * **Live Demo:** [vanguard-ics-guardian.vercel.app](https://vanguard-ics-guardian.vercel.app)
 > * **Concept:** Sandbox untrusted sensor drivers—allow reads, block exfiltration.
@@ -67,6 +75,7 @@ I operate across the entire stack, from pixel-perfect UI to system-level desktop
 | ![Leptos](https://img.shields.io/badge/Leptos-EF3939?style=flat-square&logo=rust&logoColor=white) | ![Node](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | ![Zero Trust](https://img.shields.io/badge/Zero_Trust_Arch-blueviolet?style=flat-square) |
 | ![Desktop](https://img.shields.io/badge/Tauri_%2F_Electron-critical?style=flat-square) | ![Component Model](https://img.shields.io/badge/Component_Model-blueviolet?style=flat-square) | ![ICS Security](https://img.shields.io/badge/ICS_Security-darkgreen?style=flat-square) |
+| ![nom](https://img.shields.io/badge/nom_Parser-FF6B6B?style=flat-square) | ![Axum](https://img.shields.io/badge/Axum-000000?style=flat-square&logo=rust&logoColor=white) | ![IEC 62443](https://img.shields.io/badge/IEC_62443-critical?style=flat-square) |
 
 ### 🧠 Engineering Philosophy
 
@@ -79,6 +88,8 @@ I operate across the entire stack, from pixel-perfect UI to system-level desktop
 * **Capability-Based Security:** I design systems where untrusted code runs in sandboxes that can only access explicitly granted capabilities. Deny by default, grant by exception—not the other way around.
 
 * **Verifiable Benchmarks:** I don't trust marketing claims. When I say "68KB vs 500MB," I provide the Dockerfiles to prove it. Evidence over assertions.
+
+* **Crash Containment:** Untrusted parsers run in WASM sandboxes. A buffer overflow kills the sandbox—not the host. Sub-10ms recovery, zero data loss.
 
 ---
 
