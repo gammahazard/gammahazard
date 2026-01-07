@@ -19,18 +19,29 @@
 I don't just build frontends; I engineer complete systems.
 My focus is on **Reliability Engineering**—creating applications that look great on the client side (Next.js/React) while remaining bulletproof on the server side. Whether it's high-frequency blockchain forensics, cross-platform desktop apps, or business-critical booking platforms, I build software that **does not fail**.
 
-### 🔭 Current Focus: Vanguard Secure Solutions
-**Vanguard Secure Solutions** is my architecture firm specialized in digitizing high-trust service businesses.
+---
 
-**Featured Implementations:**
+## 🛡️ The Reliability Triad
 
-> **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** ⭐ NEW
+My flagship portfolio demonstrates **systems engineering** across three pillars of reliability:
+
+| Project | Domain | Reliability Story |
+|---------|--------|-------------------|
+| **ICS Guardian** | Security | "I ensure the connection is safe." |
+| **Protocol Gateway** | Edge | "I ensure the parser is crash-proof." |
+| **Raft Cluster** | Distributed | "I ensure the system state is consistent." |
+
+---
+
+### 🔭 Featured Implementations
+
+> **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** ⭐ FLAGSHIP
 > Safe legacy protocol translation via WASM sandboxing—Modbus TCP → MQTT with crash containment.
 > * **Live Demo:** [protocol-gateway-sandbox.vercel.app](https://protocol-gateway-sandbox.vercel.app)
-> * **Concept:** Malformed Modbus crashes the sandbox, not the gateway. <10ms recovery.
+> * **Concept:** Malformed Modbus crashes the sandbox, not the gateway. ~7ms recovery (measured).
 > * **Stack:** Rust (nom parser), Leptos, WASI 0.2, JavaScript host (JCO).
-> * **Reliability:** 2oo3 TMR voting with real WASM measurements—SIL 3 patterns (IEC 61508).
-> * **Security:** Dual-terminal demo showing Python crash vs WASM resilience.
+> * **Reliability:** 2oo3 TMR voting with real WASM measurements—SIL 3 patterns.
+> * **Security:** Dual-terminal demo with 4 attack vectors + "Run All" chaos mode.
 > * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
 
 > **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)**
@@ -38,9 +49,20 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 > * **Live Demo:** [vanguard-ics-guardian.vercel.app](https://vanguard-ics-guardian.vercel.app)
 > * **Concept:** Sandbox untrusted sensor drivers—allow reads, block exfiltration.
 > * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
-> * **Reliability:** 2oo3 TMR voting demo—WASM hot-swap (~10ms) vs Python restart (3+ sec).
-> * **Security:** 18 integration tests verifying all 4 security states.
-> * **Highlight:** 68KB WASM component vs 500MB+ Docker containers.
+> * **Reliability:** 2oo3 TMR voting demo—WASM hot-swap (<0.1ms measured) vs Python restart (3+ sec).
+> * **Security:** 17 integration tests verifying all 4 security states.
+> * **Highlight:** 14.7KB WASM component vs 500MB+ Docker containers.
+
+> **Project: Raft Consensus Cluster(Coming Soon!)** 🚧 IN DEVELOPMENT
+> Distributed consensus in the browser via WASI 0.2—backend Rust runs unchanged in browser.
+> * **Concept:** Leader election, log replication, network partitions—all visualized live.
+> * **Stack:** Rust (no_std compatible), WASI 0.2, Leptos, IndexedDB, BroadcastChannel.
+> * **Reliability:** Chaos controls to kill nodes and watch the cluster self-heal.
+> * **Highlight:** Same Raft algorithm runs on server AND in browser via WASI capability mapping.
+
+---
+
+### 🏢 Production Applications
 
 > **[Project: The Kennel Platform](https://github.com/gammahazard/Vanguard-kennel-frontend)**
 > A Zero-Liability booking and guest management platform for luxury pet facilities.
@@ -79,21 +101,21 @@ I operate across the entire stack, from pixel-perfect UI to system-level desktop
 | ![Desktop](https://img.shields.io/badge/Tauri_%2F_Electron-critical?style=flat-square) | ![Component Model](https://img.shields.io/badge/Component_Model-blueviolet?style=flat-square) | ![ICS Security](https://img.shields.io/badge/ICS_Security-darkgreen?style=flat-square) |
 | ![nom](https://img.shields.io/badge/nom_Parser-FF6B6B?style=flat-square) | ![Axum](https://img.shields.io/badge/Axum-000000?style=flat-square&logo=rust&logoColor=white) | ![IEC 62443](https://img.shields.io/badge/IEC_62443-critical?style=flat-square) |
 
+---
+
 ### 🧠 Engineering Philosophy
 
 * **Deep Runtime Knowledge:** I understand the JavaScript runtime at a low level (ESM vs CJS, Event Loop, Bundling). I specialize in making legacy modules work within modern, strict frameworks like Next.js.
 
 * **Zero-Liability Design:** I prioritize **risk reduction**. I leverage hardware security (FIDO2) and architectural air-gaps to ensure that toxic data (Credit Cards/PII) never touches the application database.
 
-* **Decoupled by Default:** Vanguard utilizes a strict **Decoupled Architecture**. The Frontend and Backend are separate entities, ensuring security isolation and allowing components to scale independently.
+* **Capability-Based Security:** I design systems where untrusted code runs in sandboxes that can only access explicitly granted capabilities. Deny by default, grant by exception.
 
-* **Capability-Based Security:** I design systems where untrusted code runs in sandboxes that can only access explicitly granted capabilities. Deny by default, grant by exception—not the other way around.
+* **Crash Containment:** Untrusted parsers run in WASM sandboxes. A buffer overflow kills the sandbox—not the host. Sub-millisecond recovery, zero data loss.
 
-* **Verifiable Benchmarks:** I don't trust marketing claims. When I say "68KB vs 500MB," I provide the Dockerfiles to prove it. Evidence over assertions.
+* **Hitless Failover:** 2oo3 TMR voting ensures continuous operation during faults. WASM's microsecond instantiation enables software failover without frame loss.
 
-* **Crash Containment:** Untrusted parsers run in WASM sandboxes. A buffer overflow kills the sandbox—not the host. Sub-10ms recovery, zero data loss.
-
-* **Hitless Failover:** 2oo3 TMR voting ensures continuous operation during faults. WASM's microsecond instantiation enables software failover without frame loss—Python can't match this.
+* **Real Measurements, Not Marketing:** When I claim "<0.1ms rebuild," I provide `performance.now()` timings (5-sample averaged) in the live demo. Evidence over assertions.
 
 ---
 
