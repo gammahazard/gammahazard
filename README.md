@@ -35,6 +35,17 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 
 ### 🔭 Featured Implementations
 
+> **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)**
+> Capability-based security demo: WASI 0.2 data diode for industrial control systems.
+> * **Live Demo:** [vanguard-ics-guardian.vercel.app](https://vanguard-ics-guardian.vercel.app)
+> * **Concept:** Sandbox untrusted sensor drivers—allow reads, block exfiltration.
+> * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
+> * **Reliability:** 2oo3 TMR voting demo—WASM hot-swap (<0.1ms measured) vs Python restart (3+ sec).
+> * **Security:** 17 integration tests verifying all 4 security states.
+> * **Highlight:** 14.7KB WASM component vs 500MB+ Docker containers.
+
+
+
 > **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** ⭐ FLAGSHIP
 > Safe legacy protocol translation via WASM sandboxing—Modbus TCP → MQTT with crash containment.
 > * **Live Demo:** [protocol-gateway-sandbox.vercel.app](https://protocol-gateway-sandbox.vercel.app)
@@ -44,14 +55,7 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Security:** Dual-terminal demo with 4 attack vectors + "Run All" chaos mode.
 > * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
 
-> **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)**
-> Capability-based security demo: WASI 0.2 data diode for industrial control systems.
-> * **Live Demo:** [vanguard-ics-guardian.vercel.app](https://vanguard-ics-guardian.vercel.app)
-> * **Concept:** Sandbox untrusted sensor drivers—allow reads, block exfiltration.
-> * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
-> * **Reliability:** 2oo3 TMR voting demo—WASM hot-swap (<0.1ms measured) vs Python restart (3+ sec).
-> * **Security:** 17 integration tests verifying all 4 security states.
-> * **Highlight:** 14.7KB WASM component vs 500MB+ Docker containers.
+
 
 > **Project: Raft Consensus Cluster(Coming Soon!)** 🚧 IN DEVELOPMENT
 > Distributed consensus in the browser via WASI 0.2—backend Rust runs unchanged in browser.
