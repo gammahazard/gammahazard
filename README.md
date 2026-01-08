@@ -1,10 +1,10 @@
 # CM Mongo
 
-![Role](https://img.shields.io/badge/Role-Principal_Systems_Architect-blue?style=for-the-badge)
+![Role](https://img.shields.io/badge/Role-Systems_Engineer-blue?style=for-the-badge)
 ![Focus](https://img.shields.io/badge/Focus-Security_%7C_Reliability_%7C_Scale-black?style=for-the-badge)
 ![Status](https://img.shields.io/badge/System-Operational-green?style=for-the-badge)
 
-### Principal Systems Architect
+### Systems Engineer
 *Engineering high-assurance systems—from industrial edge devices to enterprise web.*
 
 ---
@@ -17,7 +17,7 @@
 ---
 
 I don't just build frontends; I engineer complete systems.
-My focus is on **Reliability Engineering**—creating applications that look great on the client side (Next.js/React) while remaining bulletproof on the server side. Whether it's high-frequency blockchain forensics, cross-platform desktop apps, or business-critical booking platforms, I build software that **does not fail**.
+My focus is on **Reliability Engineering**—creating applications that look great on the client side (Next.js/React) while remaining bulletproof on the server side. Whether it's high-frequency blockchain forensics, cross-platform desktop apps, or business-critical booking platforms, I build software designed to **fail gracefully and recover instantly**.
 
 ---
 
@@ -40,9 +40,9 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Live Demo:** [vanguard-ics-guardian.vercel.app](https://vanguard-ics-guardian.vercel.app)
 > * **Concept:** Sandbox untrusted sensor drivers—allow reads, block exfiltration.
 > * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
-> * **Reliability:** 2oo3 TMR voting demo—WASM hot-swap (<0.1ms measured) vs Python restart (3+ sec).
 > * **Security:** 17 integration tests verifying all 4 security states.
 > * **Highlight:** 14.7KB WASM component vs 500MB+ Docker containers.
+> * **🍓 Hardware Demo:** Coming soon—same `.wasm` binary runs on Raspberry Pi via Wasmtime with zero code changes.
 
 
 
@@ -54,15 +54,19 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Reliability:** 2oo3 TMR voting with real WASM measurements—SIL 3 patterns.
 > * **Security:** Dual-terminal demo with 4 attack vectors + "Run All" chaos mode.
 > * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
+> * **🍓 Hardware Demo:** Coming soon—same `.wasm` binary runs on Raspberry Pi via Wasmtime with zero code changes.
 
 
 
-> **[Project: Raft Consensus Cluster](https://github.com/gammahazard/Raft-Consensus)** 🚧 IN DEVELOPMENT
-> Distributed consensus in the browser via WASI 0.2—backend Rust runs unchanged in browser.
+> **[Project: Raft Consensus Cluster](https://github.com/gammahazard/Raft-Consensus)**
+> Distributed consensus in the browser via WASI 0.2—same Rust binary runs in browser AND on Raspberry Pi.
+> * **Live Demo:** [raft-consensus.vercel.app](https://raft-consensus.vercel.app)
 > * **Concept:** Leader election, log replication, network partitions—all visualized live.
-> * **Stack:** Rust (no_std compatible), WASI 0.2, Leptos, IndexedDB, BroadcastChannel.
+> * **Stack:** Rust, WASI 0.2, Leptos, IndexedDB, BroadcastChannel.
 > * **Reliability:** Chaos controls to kill nodes and watch the cluster self-heal.
-> * **Highlight:** Same Raft algorithm runs on server AND in browser via WASI capability mapping.
+> * **Advanced:** PreVote protocol implementation (Raft Thesis Section 9.6) prevents disruptive servers.
+> * **Highlight:** 120+ tests covering elections, replication, and fault scenarios.
+> * **🍓 Hardware Demo:** Coming soon—same `.wasm` binary runs on 3-node Raspberry Pi cluster via Wasmtime with zero code changes.
 
 ---
 
@@ -94,16 +98,17 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 
 ### 🛠️ The Full Stack Arsenal
 
-I operate across the entire stack, from pixel-perfect UI to system-level desktop control.
+I operate across the entire stack, from pixel-perfect UI to system-level runtime control.
 
 | **Core Systems** | **Web & Backend** | **Data & Security** |
 | :--- | :--- | :--- |
 | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) | ![Next JS](https://img.shields.io/badge/Next.js_14-black?style=flat-square&logo=next.js&logoColor=white) | ![FIDO](https://img.shields.io/badge/Biometrics_(FIDO2)-green?style=flat-square) |
 | ![WASI](https://img.shields.io/badge/WASM_%2F_WASI-orange?style=flat-square) | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) | ![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) |
-| ![Leptos](https://img.shields.io/badge/Leptos-EF3939?style=flat-square&logo=rust&logoColor=white) | ![Node](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
-| ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | ![Zero Trust](https://img.shields.io/badge/Zero_Trust_Arch-blueviolet?style=flat-square) |
-| ![Desktop](https://img.shields.io/badge/Tauri_%2F_Electron-critical?style=flat-square) | ![Component Model](https://img.shields.io/badge/Component_Model-blueviolet?style=flat-square) | ![ICS Security](https://img.shields.io/badge/ICS_Security-darkgreen?style=flat-square) |
+| ![Wasmtime](https://img.shields.io/badge/Wasmtime-Runtime-green?style=flat-square&logo=webassembly) | ![Node](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| ![Leptos](https://img.shields.io/badge/Leptos-EF3939?style=flat-square&logo=rust&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | ![Zero Trust](https://img.shields.io/badge/Zero_Trust_Arch-blueviolet?style=flat-square) |
+| ![JCO](https://img.shields.io/badge/JCO-Transpiler-yellow?style=flat-square) | ![Component Model](https://img.shields.io/badge/Component_Model-blueviolet?style=flat-square) | ![ICS Security](https://img.shields.io/badge/ICS_Security-darkgreen?style=flat-square) |
 | ![nom](https://img.shields.io/badge/nom_Parser-FF6B6B?style=flat-square) | ![Axum](https://img.shields.io/badge/Axum-000000?style=flat-square&logo=rust&logoColor=white) | ![IEC 62443](https://img.shields.io/badge/IEC_62443-critical?style=flat-square) |
+| ![serde](https://img.shields.io/badge/serde-Serialization-orange?style=flat-square) | ![Desktop](https://img.shields.io/badge/Tauri_%2F_Electron-critical?style=flat-square) | ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) |
 
 ---
 
