@@ -57,7 +57,7 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 
 
 
-> **Project: Raft Consensus Cluster(Coming Soon!)** 🚧 IN DEVELOPMENT
+> **[Project: Raft Consensus Cluster](https://github.com/gammahazard/Raft-Consensus))** 🚧 IN DEVELOPMENT
 > Distributed consensus in the browser via WASI 0.2—backend Rust runs unchanged in browser.
 > * **Concept:** Leader election, log replication, network partitions—all visualized live.
 > * **Stack:** Rust (no_std compatible), WASI 0.2, Leptos, IndexedDB, BroadcastChannel.
