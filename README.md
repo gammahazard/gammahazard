@@ -98,7 +98,7 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 
 ### 🏛️ Ventures & Engagements
 
-> **[Metafrontier](https://metafrontier.xyz) (Technical Operations Lead)**
+> **[Metafrontier](https://metafrontier.xyz)**
 > *Current Engagement.*
 > * **Role:** Ecosystem Security & Technical Support.
 > * **Focus:** Managing operational security for a high-value user base, triaging technical incidents, and mitigating social engineering threats.
