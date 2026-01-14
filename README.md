@@ -33,6 +33,21 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 
 ---
 
+## 🎯 Guardian One: The Unified Demo
+
+> **[Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo)** — *All three pillars in one interactive story.*
+> 
+> A story-driven demonstration unifying the Reliability Triad into a single coherent narrative.
+> 
+> * **Live Demo:** [guardian-one-web-demo.vercel.app](https://guardian-one-web-demo.vercel.app)
+> * **Concept:** Industrial edge security—Python/Docker vs WASM side-by-side.
+> * **Flow:** Problem → Hardware → Demo → Proof (guided learning experience)
+> * **Stack:** Leptos, Pyodide (real Python execution), WASI 0.2.
+> * **Features:** Real CVE citations, IEC 62443 zones, 2oo3 TMR voting, live attack simulations.
+> * **🍓 Hardware Preview:** Browser simulation of a physical demo running on a real Siemens S7-1200 PLC with a 3-node Raspberry Pi cluster. Hardware version coming soon.
+
+---
+
 ### 🔭 Featured Implementations
 
 > **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)**
@@ -42,9 +57,9 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
 > * **Security:** 17 integration tests verifying all 4 security states.
 > * **Highlight:** 14.7KB WASM component vs 500MB+ Docker containers.
-> * **🍓 Hardware Demo:** Coming soon—same `.wasm` binary runs on Raspberry Pi via Wasmtime with zero code changes.
+> * **🍓 Hardware Demo:** See [Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo) for browser preview. Physical hardware demo coming soon.
 
-
+---
 
 > **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** ⭐ FLAGSHIP
 > Safe legacy protocol translation via WASM sandboxing—Modbus TCP → MQTT with crash containment.
@@ -54,9 +69,9 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Reliability:** 2oo3 TMR voting with real WASM measurements—SIL 3 patterns.
 > * **Security:** Dual-terminal demo with 4 attack vectors + "Run All" chaos mode.
 > * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
-> * **🍓 Hardware Demo:** Coming soon—same `.wasm` binary runs on Raspberry Pi via Wasmtime with zero code changes.
+> * **🍓 Hardware Demo:** See [Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo) for browser preview. Physical hardware demo coming soon.
 
-
+---
 
 > **[Project: Raft Consensus Cluster](https://github.com/gammahazard/Raft-Consensus)**
 > Distributed consensus in the browser via WASI 0.2—same Rust binary runs in browser AND on Raspberry Pi.
@@ -66,7 +81,7 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Reliability:** Chaos controls to kill nodes and watch the cluster self-heal.
 > * **Advanced:** PreVote protocol implementation (Raft Thesis Section 9.6) prevents disruptive servers.
 > * **Highlight:** 120+ tests covering elections, replication, and fault scenarios.
-> * **🍓 Hardware Demo:** Coming soon—same `.wasm` binary runs on 3-node Raspberry Pi cluster via Wasmtime with zero code changes.
+> * **🍓 Hardware Demo:** See [Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo) for browser preview. Physical 3-node Raspberry Pi cluster coming soon.
 
 ---
 
@@ -87,6 +102,8 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > *Current Engagement.*
 > * **Role:** Ecosystem Security & Technical Support.
 > * **Focus:** Managing operational security for a high-value user base, triaging technical incidents, and mitigating social engineering threats.
+
+---
 
 > **[CyberVerse](https://cyberversegame.io/) (Co-Founder & Lead Engineer)**
 > *Legacy Project - Active Ecosystem.*
@@ -129,6 +146,7 @@ I operate across the entire stack, from pixel-perfect UI to system-level runtime
 ---
 
 ### 🕵️ On-Chain Forensics & Research
+
 * **Incident Response:** Mitigating live threats and phishing vectors in the Metafrontier ecosystem and associated Solana protocols.
 * **Transaction Analysis:** Specialized in tracing diverted funds and analyzing smart contract interactions on Solana/EVM.
 
