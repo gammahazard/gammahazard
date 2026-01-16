@@ -2,7 +2,7 @@
 
 ![Role](https://img.shields.io/badge/Role-Systems_Engineer-blue?style=for-the-badge)
 ![Focus](https://img.shields.io/badge/Focus-Security_%7C_Reliability_%7C_Scale-black?style=for-the-badge)
-![Status](https://img.shields.io/badge/System-Operational-green?style=for-the-badge)
+![Stack](https://img.shields.io/badge/Stack-Full_Vertical_(React_%E2%86%A4_Metal)-blueviolet?style=for-the-badge)
 
 ### Systems Engineer
 *Engineering high-assurance systems—from industrial edge devices to enterprise web.*
@@ -21,34 +21,32 @@ My focus is on **Reliability Engineering**—creating applications that look gre
 
 ---
 
-## 🛡️ The Reliability Triad
-
-My flagship portfolio demonstrates **systems engineering** across three pillars of reliability:
-
-| Project | Domain | Reliability Story |
-|---------|--------|-------------------|
-| **ICS Guardian** | Security | "I ensure the connection is safe." |
-| **Protocol Gateway** | Edge | "I ensure the parser is crash-proof." |
-| **Raft Cluster** | Distributed | "I ensure the system state is consistent." |
-
----
-
 ## 🎯 Guardian One: The Unified Demo
 
-> **[Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo)** — *All three pillars in one interactive story.*
+> **[Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo)** — *The Flagship Experience.*
 > 
-> A story-driven demonstration unifying the Reliability Triad into a single coherent narrative.
+> A story-driven demonstration unifying my engineering pillars into a single coherent narrative.
 > 
 > * **Live Demo:** [guardian-one-web-demo.vercel.app](https://guardian-one-web-demo.vercel.app)
 > * **Concept:** Industrial edge security—Python/Docker vs WASM side-by-side.
 > * **Flow:** Problem → Hardware → Demo → Proof (guided learning experience)
 > * **Stack:** Leptos, Pyodide (real Python execution), WASI 0.2.
 > * **Features:** Real CVE citations, IEC 62443 zones, 2oo3 TMR voting, live attack simulations.
-> * **🍓 Hardware Preview:** Browser simulation of a physical demo running on a real Siemens S7-1200 PLC with a 3-node Raspberry Pi cluster. Hardware version coming soon.
+> * **🍓 Hardware Preview:** Browser simulation of a physical demo running on a real Siemens S7-1200 PLC with a 3-node Raspberry Pi cluster.
 
 ---
 
 ### 🔭 Featured Implementations
+
+> **[Project: Edge WASI Runtime](https://github.com/gammahazard/edge-wasi-runtime)** 
+> A secure, hot-swappable IoT runtime executing sandboxed Python plugins on Raspberry Pi.
+> * **Concept:** "The Secure Plugin Host." Running untrusted user scripts (Python) on bare metal without risk.
+> * **Stack:** Rust (Host), WASI Component Model, Python (Guest), Tokio.
+> * **Innovation:** **Hybrid Architecture**. Rust handles the hardware/network (Safety), Python handles the business logic (Velocity).
+> * **Reliability:** Dead-man switches on plugin execution allow the host to survive plugin crashes.
+> * **Highlight:** Hot-swapping a running sensor driver in <10ms without dropping network connections. **Demonstrated Live on Hardware.**
+
+---
 
 > **[Project: ICS Guardian](https://github.com/gammahazard/vanguard-ics-guardian)**
 > Capability-based security demo: WASI 0.2 data diode for industrial control systems.
@@ -57,11 +55,10 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Stack:** Rust (cargo-component), Leptos, WASI 0.2, JavaScript host (JCO).
 > * **Security:** 17 integration tests verifying all 4 security states.
 > * **Highlight:** 14.7KB WASM component vs 500MB+ Docker containers.
-> * **🍓 Hardware Demo:** See [Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo) for browser preview. Physical hardware demo coming soon.
 
 ---
 
-> **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** ⭐ FLAGSHIP
+> **[Project: Protocol Gateway Sandbox](https://github.com/gammahazard/protocol-gateway-sandbox)** 
 > Safe legacy protocol translation via WASM sandboxing—Modbus TCP → MQTT with crash containment.
 > * **Live Demo:** [protocol-gateway-sandbox.vercel.app](https://protocol-gateway-sandbox.vercel.app)
 > * **Concept:** Malformed Modbus crashes the sandbox, not the gateway. ~7ms recovery (measured).
@@ -69,7 +66,6 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Reliability:** 2oo3 TMR voting with real WASM measurements—SIL 3 patterns.
 > * **Security:** Dual-terminal demo with 4 attack vectors + "Run All" chaos mode.
 > * **Highlight:** IEC 62443 attack surface minimization—only 2 of 40+ function codes implemented.
-> * **🍓 Hardware Demo:** See [Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo) for browser preview. Physical hardware demo coming soon.
 
 ---
 
@@ -81,7 +77,6 @@ My flagship portfolio demonstrates **systems engineering** across three pillars 
 > * **Reliability:** Chaos controls to kill nodes and watch the cluster self-heal.
 > * **Advanced:** PreVote protocol implementation (Raft Thesis Section 9.6) prevents disruptive servers.
 > * **Highlight:** 120+ tests covering elections, replication, and fault scenarios.
-> * **🍓 Hardware Demo:** See [Guardian One Web-Demo](https://github.com/gammahazard/guardian-one-web-demo) for browser preview. Physical 3-node Raspberry Pi cluster coming soon.
 
 ---
 
@@ -140,6 +135,8 @@ I operate across the entire stack, from pixel-perfect UI to system-level runtime
 * **Crash Containment:** Untrusted parsers run in WASM sandboxes. A buffer overflow kills the sandbox—not the host. Sub-millisecond recovery, zero data loss.
 
 * **Hitless Failover:** 2oo3 TMR voting ensures continuous operation during faults. WASM's microsecond instantiation enables software failover without frame loss.
+
+* **WASM + Docker (The Hybrid Model):** I previously viewed WASM as a Docker replacement. I now architect systems where they coexist: Docker ships the *Infrastructure* (The Rust Host or Kernel), while WASM ships the *Business Logic* (The Plugins). This enables O(n) secure tenants within O(1) container, drastically reducing overhead/cost compared to "one container per tenant."
 
 * **Real Measurements, Not Marketing:** When I claim "<0.1ms rebuild," I provide `performance.now()` timings (5-sample averaged) in the live demo. Evidence over assertions.
 
