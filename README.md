@@ -1,4 +1,4 @@
-# CM Mongo
+# Mongo
 
 ![Independent Systems Engineer](https://img.shields.io/badge/Independent-Systems_Engineer-d98a4f?style=flat-square)
 ![Focus](https://img.shields.io/badge/Self--hosted_AI%2FML-Embedded_%C2%B7_OT_Security-3a3a3a?style=flat-square)
